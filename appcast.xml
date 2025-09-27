@@ -4,11 +4,12 @@
         <title>Vidwall Hub</title>
         <item>
             <title>1.0.0</title>
-            <pubDate>Thu, 12 Jun 2025 16:54:48 +0800</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/jaywcjlove/mousio-hint/releases/download/v1.0.0/MousioHint_v1.0.0.zip" length="2303558" type="application/octet-stream"/>
+            <pubDate>Sun, 28 Sep 2025 04:33:14 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.0.0/VidwallHub_v1.0.0.zip" length="2850147" type="application/octet-stream" sparkle:edSignature="b7QdhbVbaNfFvFABAmVNMPhSnsDr7mm7DtN03iw/WY8jgfHLPntroXAG3HlQmbHYqpDlIkLPqPBL2efSM2O1Dg=="/>
         </item>
     </channel>
 </rss>
