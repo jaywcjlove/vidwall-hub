@@ -10,6 +10,10 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.3.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.3.0)
+
+- feat: add URL Scheme support.
+
 ## [v1.2.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.2.0)
 
 - feat: add functionality for default blank homepage.
