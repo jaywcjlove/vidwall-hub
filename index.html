@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vidwall Hub v1.2.0</title>
+    <title>Vidwall Hub v1.3.0</title>
     <meta name="description" content="Vidwall Hub is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them ">
     <meta name="keywords" content="Vidwall Hub,video wallpaper,lock screen animations,macOS tools,system productivity">
     <link rel="stylesheet" type="text/css" href="css/main.css?v=1.34.2">
@@ -20,8 +20,8 @@
   </head>
   <body id="idoctotop"><a href="#idoctotop" class="gototop">top</a>
     <header class="header">
-      <article class="inner warpper" style="max-width:720px;"><a class="logo" href="index.html"><img alt="Vidwall Hub <sup>v1.2.0</sup> logo" src="assets/logo.png">
-<span class="title">Vidwall Hub <sup>v1.2.0</sup></span></a>
+      <article class="inner warpper" style="max-width:720px;"><a class="logo" href="index.html"><img alt="Vidwall Hub <sup>v1.3.0</sup> logo" src="assets/logo.png">
+<span class="title">Vidwall Hub <sup>v1.3.0</sup></span></a>
         <div class="content">
           <ul class="menu">
             <li><a href="index.html" target="" class="active">Home</a></li>
@@ -56,6 +56,11 @@
         </p>
         <p><strong>Vidwall Hub</strong> is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them as lock screen animations in <strong>System Settings</strong>.</p>
         <p>When trying to implement both dynamic wallpapers and dynamic lock screens through the <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a> app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a>. Even when running independently and bypassing the sandbox, it still cannot directly set dynamic lock screens because macOS does not provide the related API. Vidwall Hub only imports videos into the system wallpaper service, and users need to complete the final application in the wallpaper options in System Settings.</p>
+        <p><strong>URL Scheme</strong></p>
+        <p><strong>Vidwall Hub</strong> allows activating the tool via URL and automatically importing a video based on the file path parameter in the URL.</p>
+        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1">vidwallhub://open?file<span class="token operator">=</span>/file/to/path/video.mp4
+</span></code><input type="hidden" value="vidwallhub://open?file=/file/to/path/video.mp4
+"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
       </markdown-style>
     </div>
     <script src="js/demo-preview.js?v=1.34.2"></script>
