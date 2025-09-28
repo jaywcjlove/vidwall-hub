@@ -10,6 +10,10 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.2.0](https://github.com/jaywcjlove/mousio-hint/releases/tag/v1.2.0)
+
+- feat: 默认空白首页添加功能
+
 ## [v1.1.0](https://github.com/jaywcjlove/mousio-hint/releases/tag/v1.1.0)
 
 - feat: 添加 includeInShuffle 和 showInTopLevel 选项

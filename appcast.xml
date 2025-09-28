@@ -3,6 +3,21 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Sun, 28 Sep 2025 15:09:15 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>feat: add functionality for default blank homepage.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.2.0/VidwallHub_v1.2.0.zip" length="2869077" type="application/octet-stream" sparkle:edSignature="AkS6KtZzmFLrp23jC3SEjX176sEvPDk8wP6eEsTdU0X2bqX+NmTJ9Ni5Abh5V4gB5zJ30flV6EOyFksH4AzhAg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.2.0/VidwallHub4-3.delta" sparkle:deltaFrom="3" length="84646" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="858560" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="1tT1wziQO37VysLJRlsFSatYbpXOr2u0rWgMAofrnjeVDVmDTg+OKReN119VLO52Lyl2tE6Ap4CO935wKKbxBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Sun, 28 Sep 2025 11:31:18 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
