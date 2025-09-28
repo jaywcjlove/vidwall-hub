@@ -3,6 +3,18 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.1.0</title>
+            <pubDate>Sun, 28 Sep 2025 11:31:18 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>feat: add includeInShuffle and showInTopLevel options.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.1.0/VidwallHub_v1.1.0.zip" length="2862114" type="application/octet-stream" sparkle:edSignature="+JG7MFKjIgSL4k4SiUk3illCb4UeX1F+yY9p2/i0td94LSSLcMADt95k4zOHR3FgcIsvf2/PPpCqSeCX239NBw=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Sun, 28 Sep 2025 04:33:14 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
