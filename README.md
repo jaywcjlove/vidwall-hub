@@ -28,4 +28,6 @@
 
 ![Vidwall Hub](./assets/vidwall-hub-screenshots-1.png)
 
-**Vidwall Hub** is a tool that makes it easy to import videos (mp4, mov) into the system wallpaper service and use them as lock screen animations through the system settings. Due to sandbox restrictions, [Vidwall](https://github.com/jaywcjlove/vidwall) cannot implement this functionality directly within the app. As a complement to [Vidwall](https://github.com/jaywcjlove/vidwall), Vidwall Hub also cannot set lock screen animations directly because macOS does not provide the necessary API. It only imports the videos into the system wallpaper service, and users need to apply them through the wallpaper options in the system settings.
+**Vidwall Hub** is a tool that allows you to easily import videos (`mp4`, `mov`) into the system wallpaper service and use them as lock screen animations in **System Settings**.
+
+Due to sandbox restrictions, [Vidwall](https://github.com/jaywcjlove/vidwall) cannot directly implement this feature within the app. As a complement to [Vidwall](https://github.com/jaywcjlove/vidwall), Vidwall Hub also cannot directly set lock screen animations because macOS does not provide a related API. It only imports videos into the system wallpaper service, and users must complete the final setup in the wallpaper options of System Settings.

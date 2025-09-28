@@ -28,7 +28,9 @@
 
 ![Vidwall Hub](./assets/vidwall-hub-screenshots-1.png)
 
-**Vidwall Hub** 是一款可以轻松将视频（mp4、mov）导入系统壁纸服务，并在系统设置中将其用作锁屏动画的工具。由于沙盒限制，[Vidwall](https://github.com/jaywcjlove/vidwall) 无法在应用内直接实现此功能。作为 [Vidwall](https://github.com/jaywcjlove/vidwall) 的补充，Vidwall Hub 也无法直接设置锁屏动画，因为 macOS 并未提供相关 API。它仅将视频导入系统壁纸服务，用户需要在系统设置的壁纸选项中完成最终应用。
+**Vidwall Hub** 是一款可以轻松将视频（`mp4`、`mov`）导入系统壁纸服务，并在`系统设置`中将其用作锁屏动画的工具。
+
+由于沙盒限制，[Vidwall](https://github.com/jaywcjlove/vidwall) 无法在应用内直接实现此功能。作为 [Vidwall](https://github.com/jaywcjlove/vidwall) 的补充，Vidwall Hub 也无法直接设置锁屏动画，因为 macOS 并未提供相关 API。它仅将视频导入系统壁纸服务，用户需要在系统设置的壁纸选项中完成最终应用。
 
 <!--idoc:config:
 title: Vidwall Hub
