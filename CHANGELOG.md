@@ -10,4 +10,8 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.1.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.1.0)
+
+- feat: add includeInShuffle and showInTopLevel options.
+
 ## [v1.0.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.0.0)
