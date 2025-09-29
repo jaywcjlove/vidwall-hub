@@ -10,6 +10,10 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.5.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.5.0)
+
+- fix: Fix issue with opening System Settings after reboot
+
 ## [v1.4.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.4.0)
 
 - feat: add feature to remove corrupted wallpapers.

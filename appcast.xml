@@ -3,6 +3,18 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Tue, 30 Sep 2025 02:07:54 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>fix: Fix issue with opening System Settings after reboot.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.5.0/VidwallHub_v1.5.0.zip" length="2883179" type="application/octet-stream" sparkle:edSignature="soOI7QBNlrKDH5RaCEXzzwv96EG9u+NtGlld921hQRuhRublgxQkII+QT+vCk7whhMC9VEUHFfhdab6o3Q/uCA=="/>
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Mon, 29 Sep 2025 17:02:38 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
