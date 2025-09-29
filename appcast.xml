@@ -3,6 +3,22 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.4.0</title>
+            <pubDate>Mon, 29 Sep 2025 17:02:38 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>feat: add feature to remove corrupted wallpapers.</li>
+<li>feat: add feature to open system wallpaper settings.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.4.0/VidwallHub_v1.4.0.zip" length="2881138" type="application/octet-stream" sparkle:edSignature="SplUH+JiuoQHlWIaWusILIYNyrrbDxYkdudDHK7HTeqleeQmDe+uKD46omHRnvl4NSgSNFTiZQ5l8RBdR50GAw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.4.0/VidwallHub6-5.delta" sparkle:deltaFrom="5" length="69290" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="858560" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Q9lPwqTCobMf53FgivUwBQ1V8ykEGm9ZKgfBDrdHnnTbHO0mH93S6rzxm3RUrCohhTqUCwFNzXs+aqT2mpI7CQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Sun, 28 Sep 2025 18:11:30 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>

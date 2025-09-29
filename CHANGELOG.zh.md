@@ -10,6 +10,11 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.4.0](https://github.com/jaywcjlove/mousio-hint/releases/tag/v1.4.0)
+
+- feat: 添加移除损坏的壁纸功能。
+- feat: 添加打开系统壁纸设置功能。
+
 ## [v1.3.0](https://github.com/jaywcjlove/mousio-hint/releases/tag/v1.3.0)
 
 - feat: 新增 URL Scheme 支持
