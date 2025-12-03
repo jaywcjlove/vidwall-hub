@@ -47,7 +47,7 @@ jobs:
             wrapper: style=max-width:720px;
           menus:
             Home: index.html
-            Mousio: https://wangchujiang.com/mousio/
+            Vidwall: https://wangchujiang.com/vidwall/
             Apps: https://wangchujiang.com/#/app
             About: https://wangchujiang.com/#/about
           sideEffectFiles:
