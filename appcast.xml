@@ -3,6 +3,20 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.6.0</title>
+            <pubDate>Tue, 06 Jan 2026 01:35:30 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>feat: improve window styling.</li>
+<li>fix: Fix internationalization display error.</li>
+<li>refactor: Update wallpaper feature and view settings usage.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.6.0/VidwallHub_v1.6.0.zip" length="2896797" type="application/octet-stream" sparkle:edSignature="V53Ircf/ncm6UOn5/UMzN/9eQpCzUPDMFPgnPCAsk1fmEmUsmOWpJJRqD4qvFrY1ytcQsCPNRmkB+FVWzobrAA=="/>
+        </item>
+        <item>
             <title>1.5.0</title>
             <pubDate>Tue, 30 Sep 2025 02:07:54 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
