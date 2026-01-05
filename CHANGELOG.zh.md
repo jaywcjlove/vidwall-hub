@@ -10,6 +10,12 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.0)
+
+1. 功能：优化窗口样式  
+2. 修复：修复国际化显示错误  
+3. 重构：更新壁纸功能及视图设置的使用方式
+
 ## [v1.5.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.5.0)
 
 - fix: 修复重启后打开系统设置时出现错误的问题
