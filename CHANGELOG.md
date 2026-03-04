@@ -10,6 +10,11 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.1)
+
+1. chore: add macOS compatibility warning.
+2. fix: update macOS version options in bug report templates.
+
 ## [v1.6.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.0)
 
 1. feat: improve window styling.

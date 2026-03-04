@@ -10,6 +10,11 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.1)
+
+1. chore: 添加 macOS 兼容性提示。
+2. fix: 更新 bug 报告模板中的 macOS 版本选项。
+
 ## [v1.6.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.0)
 
 1. 功能：优化窗口样式  
