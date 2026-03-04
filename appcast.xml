@@ -3,6 +3,19 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>1.6.1</title>
+            <pubDate>Thu, 05 Mar 2026 06:19:54 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>chore: add macOS compatibility warning.</li>
+<li>fix: update macOS version options in bug report templates.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v1.6.1/VidwallHub_v1.6.1.zip" length="2902244" type="application/octet-stream" sparkle:edSignature="R0o7iZm9d3Cp1YRD5EhgiKNFsH9KY/ZNgeAxYM1mocXUzEdUUsc1SXN84vS0OVeP2EquInSeF4ckU9BET188CQ=="/>
+        </item>
+        <item>
             <title>1.6.0</title>
             <pubDate>Tue, 06 Jan 2026 01:35:30 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
