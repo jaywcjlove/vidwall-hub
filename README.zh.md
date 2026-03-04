@@ -67,6 +67,13 @@ vidwallhub://open?file=/file/to/path/video.mp4
 - 导入完成后，播放由系统壁纸相关进程负责；Vidwall Hub 不会持续参与渲染，也不会常驻占用额外 CPU/GPU 资源。  
 - 应用的职责仅是管理 `entries.json` 与素材文件（视频/缩略图）的导入、更新和删除。
 
+**macOS 15 暂时不支持**
+
+```
+/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS
+/Library/Application Support/com.apple.idleassetsd/Customer/entries.json
+```
+
 <!--idoc:config:
 title: Vidwall Hub
 keywords: Vidwall Hub,视频壁纸,锁屏动画,macOS 工具,系统效率

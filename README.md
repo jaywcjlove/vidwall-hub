@@ -65,3 +65,10 @@ Based on the current implementation, the lock screen import workflow of Vidwall 
 - The import process incurs one-time file read/write operations and (for `.mp4` only) container remuxing overhead.
 - After import is complete, playback is handled by the system wallpaper-related processes. Vidwall Hub does not participate in rendering and does not continuously consume additional CPU or GPU resources.
 - The application's responsibility is limited to managing `entries.json` and the associated media files (videos/thumbnails), including importing, updating, and deleting them.
+
+**macOS 15 is not supported yet**
+
+```
+/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS
+/Library/Application Support/com.apple.idleassetsd/Customer/entries.json
+```
