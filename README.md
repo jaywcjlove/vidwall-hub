@@ -38,6 +38,7 @@ minimum OS requirement: `macOS Tahoe 26+`
 When trying to implement both dynamic wallpapers and dynamic lock screens through the [Vidwall](https://github.com/jaywcjlove/vidwall) app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to [Vidwall](https://github.com/jaywcjlove/vidwall). Even when running independently and bypassing the sandbox, it still cannot directly set dynamic lock screens because macOS does not provide the related API. Vidwall Hub only imports videos into the system wallpaper service, and users need to complete the final application in the wallpaper options in System Settings.
 
 ```shell
+# Installation (automatically installs to /Applications)
 $ brew install --cask jaywcjlove/tap/vidwall-hub
 ```
 
