@@ -12,6 +12,18 @@
   </h1>
   <!--rehype:style=border: 0;-->
   <p>
+    <a href="https://github.com/jaywcjlove/vidwall-hub/releases">
+      <img src="https://img.shields.io/github/v/release/jaywcjlove/vidwall-hub?color=3b82f6" alt="Release" />
+    </a>
+    <a href="https://github.com/jaywcjlove/vidwall-hub/releases/latest/">
+      <img src="https://img.shields.io/github/downloads/jaywcjlove/vidwall-hub/total?color=22c55e" alt="Downloads" />
+    </a>
+    <a href="#brew-安装">
+      <img src="https://img.shields.io/badge/Homebrew-available-orange?logo=homebrew&logoColor=white" alt="Homebrew" />
+    </a>
+    <img src="https://img.shields.io/badge/macOS-26%2B-363b44?logo=apple&logoColor=white" alt="macOS 26+" />
+  </p>
+  <p>
     <a href="./README.md">English</a> • 
     <a href="https://wangchujiang.com/vidwall/" target="_blank">Vidwall</a> • 
     <a target="_blank" href="https://github.com/jaywcjlove/vidwall-hub/issues/new?template=bug_report_cn.yml">联系&支持</a> • 
@@ -37,6 +49,8 @@
 **Vidwall Hub** 是一款可以轻松将视频（`mp4`、`mov`）导入系统壁纸服务，并在 `系统设置` 中用作锁屏动画的工具。
 
 在尝试通过 [Vidwall](https://github.com/jaywcjlove/vidwall) 应用同时实现动态壁纸和动态锁屏功能时，由于 macOS 沙盒限制，这一功能无法实现。因此，我将测试后的代码独立成一个新应用 免费提供给大家使用，作为 [Vidwall](https://github.com/jaywcjlove/vidwall) 的补充。即使独立运行、绕过沙盒限制，仍无法直接设置动态锁屏，因为 macOS 并未提供相关 API。Vidwall Hub 仅将视频导入系统壁纸服务，用户需要在系统设置的壁纸选项中完成最终应用。
+
+### Brew 安装
 
 ```shell
 # 安装（自动到 /Applications）

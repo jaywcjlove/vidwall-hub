@@ -12,6 +12,18 @@
   </h1>
   <!--rehype:style=border: 0;-->
   <p>
+    <a href="https://github.com/jaywcjlove/vidwall-hub/releases">
+      <img src="https://img.shields.io/github/v/release/jaywcjlove/vidwall-hub?color=3b82f6" alt="Release" />
+    </a>
+    <a href="https://github.com/jaywcjlove/vidwall-hub/releases/latest/">
+      <img src="https://img.shields.io/github/downloads/jaywcjlove/vidwall-hub/total?color=22c55e" alt="Downloads" />
+    </a>
+    <a href="#brew-install">
+      <img src="https://img.shields.io/badge/Homebrew-available-orange?logo=homebrew&logoColor=white" alt="Homebrew" />
+    </a>
+    <img src="https://img.shields.io/badge/macOS-26%2B-363b44?logo=apple&logoColor=white" alt="macOS 26+" />
+  </p>
+  <p>
     <a href="./README.zh.md">简体中文</a> • 
     <a href="https://wangchujiang.com/vidwall/" target="_blank">Vidwall</a> • 
     <a target="_blank" href="https://github.com/jaywcjlove/vidwall-hub/issues/new?template=bug_report.yml">Contact & Support</a> • 
@@ -36,6 +48,8 @@ minimum OS requirement: `macOS Tahoe 26+`
 **Vidwall Hub** is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them as lock screen animations in **System Settings**.
 
 When trying to implement both dynamic wallpapers and dynamic lock screens through the [Vidwall](https://github.com/jaywcjlove/vidwall) app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to [Vidwall](https://github.com/jaywcjlove/vidwall). Even when running independently and bypassing the sandbox, it still cannot directly set dynamic lock screens because macOS does not provide the related API. Vidwall Hub only imports videos into the system wallpaper service, and users need to complete the final application in the wallpaper options in System Settings.
+
+### Brew install
 
 ```shell
 # Installation (automatically installs to /Applications)
