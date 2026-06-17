@@ -10,6 +10,10 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.2](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.2)
+
+1. 新功能：程序启动时弹出不支持的 macOS 系统提示，并统一版本校验逻辑
+
 ## [v1.6.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.1)
 
 1. chore: 添加 macOS 兼容性提示。

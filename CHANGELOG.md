@@ -10,6 +10,10 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.2](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.2)
+
+1. feat: show unsupported macOS alert on launch and unify version check.
+
 ## [v1.6.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.1)
 
 1. chore: add macOS compatibility warning.
