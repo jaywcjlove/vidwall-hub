@@ -38,7 +38,7 @@
 
 <div align="center">
 
-最低操作系统要求：`macOS Tahoe 26+`
+最低操作系统要求：`macOS Tahoe 26` ~~`27`~~
 
 </div>
 
