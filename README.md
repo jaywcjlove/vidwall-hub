@@ -37,7 +37,7 @@
 </div>
 <div align="center">
 
-minimum OS requirement: `macOS Tahoe 26+` ~~`27`~~
+minimum OS requirement: `macOS Tahoe 26+`
 
 </div>
 

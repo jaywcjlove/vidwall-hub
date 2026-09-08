@@ -3,6 +3,22 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>2.0.0</title>
+            <pubDate>Tue, 08 Sep 2026 21:44:23 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>1. feat: support macOS 27 and dynamic wallpaper setting. </li>
+<li>2. fix(ui): explicitly show NSMenuItem symbol images on macOS 27+. </li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v2.0.0/VidwallHub_v2.0.0.zip" length="2888349" type="application/octet-stream" sparkle:edSignature="fbtXmK+PGmdGmT2yf0UHR7eLe2i97wx1mTb1SA4wchKGvHtCT9higOs/GhTgqXwHK6T5cboYtkDqZfNweSCCAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v2.0.0/VidwallHub13-11.delta" sparkle:deltaFrom="11" length="225054" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="aSQSROBJujQkIcTfnrXaWPYbxKhnKKW6jRiw3BpyXoP8Dy/G2GlfIhUUKOO19r+w/wPutzg7MDTW7XLrFa0CBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.6.3</title>
             <pubDate>Fri, 17 Jul 2026 19:12:47 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
