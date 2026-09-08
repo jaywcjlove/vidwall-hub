@@ -45,9 +45,9 @@ minimum OS requirement: `macOS Tahoe 26+`
 
 ![Vidwall Hub](./assets/vidwall-hub-screenshots-1.png)
 
-**Vidwall Hub** is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them as lock screen animations in **System Settings**.
+**Vidwall Hub** is a tool that lets you import videos (`mp4`, `mov`, `m4v`) into the system wallpaper service and use them as lock screen animations in **System Settings → Wallpaper**. It supports **macOS 26** and **macOS 27**.
 
-When trying to implement both dynamic wallpapers and dynamic lock screens through the [Vidwall](https://github.com/jaywcjlove/vidwall) app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to [Vidwall](https://github.com/jaywcjlove/vidwall). Even when running independently and bypassing the sandbox, it still cannot directly set dynamic lock screens because macOS does not provide the related API. Vidwall Hub only imports videos into the system wallpaper service, and users need to complete the final application in the wallpaper options in System Settings.
+When trying to implement both dynamic wallpapers and dynamic lock screens through the [Vidwall](https://github.com/jaywcjlove/vidwall) app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to [Vidwall](https://github.com/jaywcjlove/vidwall). macOS does not provide a public API for setting a dynamic lock screen. Vidwall Hub registers videos in the system Aerial wallpaper catalog and writes the current wallpaper configuration; after import you can also view or switch them in System Settings.
 
 ### Brew install
 
@@ -64,26 +64,51 @@ $ brew install --cask jaywcjlove/tap/vidwall-hub
 vidwallhub://open?file=/file/to/path/video.mp4
 ```
 
-### Lock Screen (macOS 26+)
+### Lock Screen (macOS 26 / macOS 27)
 
-Based on the current implementation, the lock screen import workflow of Vidwall Hub is as follows (user-level, no administrator privileges required):
+macOS has no public API for setting a dynamic lock screen. Vidwall Hub still uses the system Aerial wallpaper path (user-level, no administrator privileges). The directories are the same as on macOS 26:
 
-1. **Load system manifest**: Read `~/Library/Application Support/com.apple.wallpaper/aerials/manifest/entries.json`.
+```
+~/Library/Application Support/com.apple.wallpaper/aerials/manifest/entries.json
+~/Library/Application Support/com.apple.wallpaper/aerials/videos/<UUID>.mov
+~/Library/Application Support/com.apple.wallpaper/aerials/thumbnails/<UUID>.png
+~/Library/Application Support/com.apple.wallpaper/Store/Index.plist
+```
+
+Import **only patches** Vidwall’s own category and asset entries. It does not rewrite the entire system Aerial catalog.
+
+**Shared workflow:**
+
+1. **Load system manifest**: Read `entries.json` (parse only; do not rewrite the whole file).
 2. **Create Vidwall category (first time)**: If the Vidwall category does not exist, create a `Vidwall Videos` category and its subcategory.
-3. **Generate asset entries**: Create an `asset` entry for each imported video and write it into `entries.json`.
-4. **Write thumbnails**: Generate a PNG thumbnail from the first frame of the video and save it to `~/Library/Application Support/com.apple.wallpaper/aerials/thumbnails/<UUID>.png`.
-5. **Write video files**:
-   - `.mov`: Copy to `~/Library/Application Support/com.apple.wallpaper/aerials/videos/<UUID>.mov`
-   - `.mp4`: Export to `.mov` using `AVAssetExportPresetPassthrough`, then write to the directory above
-6. **Refresh wallpaper services**: Run  
-   `killall Wallpaper WallpaperAgent WallpaperAerialsExtension WallpaperImageExtension WallpaperLegacyExtension`  
-   to force the system to reload the resources immediately.
+3. **Generate asset entries**: Create an `asset` for each imported video and patch it into `entries.json` (video URLs use the `file://` scheme).
+4. **Write thumbnails**: Generate a PNG thumbnail from the first video frame.
+5. **Write video files**: See the OS-specific notes below.
+6. **Set as current wallpaper**: Write `Store/Index.plist` so the imported `assetID` is `com.apple.wallpaper.choice.aerials`.
+7. **Refresh wallpaper services**: Restart `WallpaperAgent` and the related Aerial extensions so the system reloads the assets.
+8. **Delete**: Remove the entry and its files. If the deleted item is the current wallpaper, retarget to another Vidwall video or a built-in Aerial so System Settings does not keep a ghost item or wipe the default wallpaper list.
+
+**macOS 26:**
+
+- `.mov`: Copy as-is to `aerials/videos/<UUID>.mov`.
+- `.mp4` / `.m4v`: Export to `.mov` with `AVAssetExportPresetPassthrough` (no re-encode; full duration is kept).
+- If System Settings is already open, switch to **General** before writing the catalog (so the Wallpaper pane does not write stale data back). This is the original macOS 26 approach.
+
+**macOS 27:**
+
+`WallpaperAerialsExtension` on macOS 27 requires HEVC temporal scalability (`tscl` / `tsas`). Typical user videos do not include these sample groups, so the lock screen freezes or goes black after the first unlock.
+
+- If the video **already has** temporal layers: copy it as `.mov`.
+- If it **does not**: re-encode in the background to HEVC Main 10 with temporal layers. The lock screen only needs a short loop, so at most the first **30 seconds** are transcoded.
+- During import, do not switch System Settings panes and do not terminate the `Wallpaper` extension, so drag-and-drop does not crash Wallpaper settings.
+- Clicking a thumbnail in the app sets that video as the current Aerial wallpaper / lock screen.
 
 **Resource usage notes:**
 
-- The import process incurs one-time file read/write operations and (for `.mp4` only) container remuxing overhead.
-- After import is complete, playback is handled by the system wallpaper-related processes. Vidwall Hub does not participate in rendering and does not continuously consume additional CPU or GPU resources.
-- The application's responsibility is limited to managing `entries.json` and the associated media files (videos/thumbnails), including importing, updating, and deleting them.
+- macOS 26: one-time file I/O, plus container remuxing for `.mp4` / `.m4v` only.
+- macOS 27: one-time encode cost if temporal transcode is required (capped at 30 seconds); compatible `.mov` files are still copied.
+- After import, playback is handled by the system wallpaper processes. Vidwall Hub does not participate in rendering and does not keep extra CPU or GPU resources in use.
+- The app manages `entries.json`, `Index.plist`, and the media files (videos/thumbnails): import, update, and delete.
 
 **macOS 15 is not supported yet**
 
