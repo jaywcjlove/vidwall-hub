@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vidwall Hub v2.0.0</title>
-    <meta name="description" content="Vidwall Hub is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them ">
+    <title>Vidwall Hub 2.0.0</title>
+    <meta name="description" content="Vidwall Hub is a tool that lets you import videos (mp4, mov, m4v) into the system wallpaper service and use them as lock">
     <meta name="keywords" content="Vidwall Hub,video wallpaper,lock screen animations,macOS tools,system productivity">
     <meta name="author" content="Kenny Wong">
-    <meta property="og:site_name" content="Vidwall Hub <sup>v2.0.0</sup>">
+    <meta property="og:site_name" content="Vidwall Hub <sup>2.0.0</sup>">
     <meta property="og:url" content="https://wangchujiang.com/vidwall-hub/index.html">
     <meta property="og:image" content="https://wangchujiang.com/vidwall-hub/assets/vidwall-hub.png">
     <meta property="og:type" content="application">
-    <meta property="og:title" content="Vidwall Hub <sup>v2.0.0</sup>">
-    <meta property="og:description" content="Vidwall Hub is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them ">
+    <meta property="og:title" content="Vidwall Hub <sup>2.0.0</sup>">
+    <meta property="og:description" content="Vidwall Hub is a tool that lets you import videos (mp4, mov, m4v) into the system wallpaper service and use them as lock">
     <meta property="twitter:image:src" content="https://wangchujiang.com/vidwall-hub/assets/vidwall-hub.png">
     <meta property="twitter:site" content="@jaywcjlove">
     <meta property="twitter:creator" content="jaywcjlove">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Vidwall Hub <sup>v2.0.0</sup> - Vidwall Hub is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them ">
-    <meta property="twitter:description" content="Vidwall Hub is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them ">
+    <meta property="twitter:title" content="Vidwall Hub <sup>2.0.0</sup> - Vidwall Hub is a tool that lets you import videos (mp4, mov, m4v) into the system wallpaper service and use them as lock">
+    <meta property="twitter:description" content="Vidwall Hub is a tool that lets you import videos (mp4, mov, m4v) into the system wallpaper service and use them as lock">
     <link rel="stylesheet" type="text/css" href="css/main.css?v=1.34.4">
     <link rel="stylesheet" type="text/css" href="css/tocbot.css?v=1.34.4">
     <link rel="stylesheet" type="text/css" href="css/media.css?v=1.34.4">
@@ -33,8 +33,8 @@
   </head>
   <body id="idoctotop"><a href="#idoctotop" class="gototop">top</a>
     <header class="header">
-      <article class="inner warpper" style="max-width:720px;"><a class="logo" href="index.html"><img alt="Vidwall Hub <sup>v2.0.0</sup> logo" src="assets/logo.png">
-<span class="title">Vidwall Hub <sup>v2.0.0</sup></span></a>
+      <article class="inner warpper" style="max-width:720px;"><a class="logo" href="index.html"><img alt="Vidwall Hub <sup>2.0.0</sup> logo" src="assets/logo.png">
+<span class="title">Vidwall Hub <sup>2.0.0</sup></span></a>
         <div class="content">
           <ul class="menu">
             <li><a href="index.html" target="" class="active">Home</a></li>
@@ -76,8 +76,8 @@
         <p>
           <img src="assets/vidwall-hub-screenshots-1.png" alt="Vidwall Hub">
         </p>
-        <p><strong>Vidwall Hub</strong> is a tool that allows you to easily import videos (mp4, mov) into the system wallpaper service and use them as lock screen animations in <strong>System Settings</strong>.</p>
-        <p>When trying to implement both dynamic wallpapers and dynamic lock screens through the <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a> app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a>. Even when running independently and bypassing the sandbox, it still cannot directly set dynamic lock screens because macOS does not provide the related API. Vidwall Hub only imports videos into the system wallpaper service, and users need to complete the final application in the wallpaper options in System Settings.</p>
+        <p><strong>Vidwall Hub</strong> is a tool that lets you import videos (<code>mp4</code>, <code>mov</code>, <code>m4v</code>) into the system wallpaper service and use them as lock screen animations in <strong>System Settings → Wallpaper</strong>. It supports <strong>macOS 26</strong> and <strong>macOS 27</strong>.</p>
+        <p>When trying to implement both dynamic wallpapers and dynamic lock screens through the <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a> app, this feature could not be realized due to macOS sandbox restrictions. Therefore, I created a standalone version of the tested code and provide it for free, as a complement to <a href="https://github.com/jaywcjlove/vidwall">Vidwall</a>. macOS does not provide a public API for setting a dynamic lock screen. Vidwall Hub registers videos in the system Aerial wallpaper catalog and writes the current wallpaper configuration; after import you can also view or switch them in System Settings.</p>
         <h3 id="brew-install"><a aria-hidden="true" tabindex="-1" href="#brew-install" class="anchor"><span class="icon icon-link"></span></a>Brew install</h3>
         <pre class="language-shell"><code class="language-shell code-highlight"><span class="code-line line-number" line="1"><span class="token comment"># Installation (automatically installs to /Applications)</span>
 </span><span class="code-line line-number" line="2">$ brew <span class="token function">install</span> <span class="token parameter variable">--cask</span> jaywcjlove/tap/vidwall-hub
@@ -89,26 +89,49 @@ $ brew install --cask jaywcjlove/tap/vidwall-hub
         <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1">vidwallhub://open?file<span class="token operator">=</span>/file/to/path/video.mp4
 </span></code><input type="hidden" value="vidwallhub://open?file=/file/to/path/video.mp4
 "><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="lock-screen-macos-26"><a aria-hidden="true" tabindex="-1" href="#lock-screen-macos-26" class="anchor"><span class="icon icon-link"></span></a>Lock Screen (macOS 26+)</h3>
-        <p>Based on the current implementation, the lock screen import workflow of Vidwall Hub is as follows (user-level, no administrator privileges required):</p>
+        <h3 id="lock-screen-macos-26--macos-27"><a aria-hidden="true" tabindex="-1" href="#lock-screen-macos-26--macos-27" class="anchor"><span class="icon icon-link"></span></a>Lock Screen (macOS 26 / macOS 27)</h3>
+        <p>macOS has no public API for setting a dynamic lock screen. Vidwall Hub still uses the system Aerial wallpaper path (user-level, no administrator privileges). The directories are the same as on macOS 26:</p>
+        <pre><code class="code-highlight"><span class="code-line line-number" line="1">~/Library/Application Support/com.apple.wallpaper/aerials/manifest/entries.json
+</span><span class="code-line line-number" line="2">~/Library/Application Support/com.apple.wallpaper/aerials/videos/&#x3C;UUID>.mov
+</span><span class="code-line line-number" line="3">~/Library/Application Support/com.apple.wallpaper/aerials/thumbnails/&#x3C;UUID>.png
+</span><span class="code-line line-number" line="4">~/Library/Application Support/com.apple.wallpaper/Store/Index.plist
+</span></code><input type="hidden" value="~/Library/Application Support/com.apple.wallpaper/aerials/manifest/entries.json
+~/Library/Application Support/com.apple.wallpaper/aerials/videos/<UUID>.mov
+~/Library/Application Support/com.apple.wallpaper/aerials/thumbnails/<UUID>.png
+~/Library/Application Support/com.apple.wallpaper/Store/Index.plist
+"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+        <p>Import <strong>only patches</strong> Vidwall’s own category and asset entries. It does not rewrite the entire system Aerial catalog.</p>
+        <p><strong>Shared workflow:</strong></p>
         <ol>
-          <li><strong>Load system manifest</strong>: Read <code>~/Library/Application Support/com.apple.wallpaper/aerials/manifest/entries.json</code>.</li>
+          <li><strong>Load system manifest</strong>: Read <code>entries.json</code> (parse only; do not rewrite the whole file).</li>
           <li><strong>Create Vidwall category (first time)</strong>: If the Vidwall category does not exist, create a <code>Vidwall Videos</code> category and its subcategory.</li>
-          <li><strong>Generate asset entries</strong>: Create an <code>asset</code> entry for each imported video and write it into <code>entries.json</code>.</li>
-          <li><strong>Write thumbnails</strong>: Generate a PNG thumbnail from the first frame of the video and save it to <code>~/Library/Application Support/com.apple.wallpaper/aerials/thumbnails/&#x3C;UUID>.png</code>.</li>
-          <li><strong>Write video files</strong>:
-            <ul>
-              <li><code>.mov</code>: Copy to <code>~/Library/Application Support/com.apple.wallpaper/aerials/videos/&#x3C;UUID>.mov</code></li>
-              <li><code>.mp4</code>: Export to <code>.mov</code> using <code>AVAssetExportPresetPassthrough</code>, then write to the directory above</li>
-            </ul>
-          </li>
-          <li><strong>Refresh wallpaper services</strong>: Run<br><code>killall Wallpaper WallpaperAgent WallpaperAerialsExtension WallpaperImageExtension WallpaperLegacyExtension</code><br>to force the system to reload the resources immediately.</li>
+          <li><strong>Generate asset entries</strong>: Create an <code>asset</code> for each imported video and patch it into <code>entries.json</code> (video URLs use the <code>file://</code> scheme).</li>
+          <li><strong>Write thumbnails</strong>: Generate a PNG thumbnail from the first video frame.</li>
+          <li><strong>Write video files</strong>: See the OS-specific notes below.</li>
+          <li><strong>Set as current wallpaper</strong>: Write <code>Store/Index.plist</code> so the imported <code>assetID</code> is <code>com.apple.wallpaper.choice.aerials</code>.</li>
+          <li><strong>Refresh wallpaper services</strong>: Restart <code>WallpaperAgent</code> and the related Aerial extensions so the system reloads the assets.</li>
+          <li><strong>Delete</strong>: Remove the entry and its files. If the deleted item is the current wallpaper, retarget to another Vidwall video or a built-in Aerial so System Settings does not keep a ghost item or wipe the default wallpaper list.</li>
         </ol>
+        <p><strong>macOS 26:</strong></p>
+        <ul>
+          <li><code>.mov</code>: Copy as-is to <code>aerials/videos/&#x3C;UUID>.mov</code>.</li>
+          <li><code>.mp4</code> / <code>.m4v</code>: Export to <code>.mov</code> with <code>AVAssetExportPresetPassthrough</code> (no re-encode; full duration is kept).</li>
+          <li>If System Settings is already open, switch to <strong>General</strong> before writing the catalog (so the Wallpaper pane does not write stale data back). This is the original macOS 26 approach.</li>
+        </ul>
+        <p><strong>macOS 27:</strong></p>
+        <p><code>WallpaperAerialsExtension</code> on macOS 27 requires HEVC temporal scalability (<code>tscl</code> / <code>tsas</code>). Typical user videos do not include these sample groups, so the lock screen freezes or goes black after the first unlock.</p>
+        <ul>
+          <li>If the video <strong>already has</strong> temporal layers: copy it as <code>.mov</code>.</li>
+          <li>If it <strong>does not</strong>: re-encode in the background to HEVC Main 10 with temporal layers. The lock screen only needs a short loop, so at most the first <strong>30 seconds</strong> are transcoded.</li>
+          <li>During import, do not switch System Settings panes and do not terminate the <code>Wallpaper</code> extension, so drag-and-drop does not crash Wallpaper settings.</li>
+          <li>Clicking a thumbnail in the app sets that video as the current Aerial wallpaper / lock screen.</li>
+        </ul>
         <p><strong>Resource usage notes:</strong></p>
         <ul>
-          <li>The import process incurs one-time file read/write operations and (for <code>.mp4</code> only) container remuxing overhead.</li>
-          <li>After import is complete, playback is handled by the system wallpaper-related processes. Vidwall Hub does not participate in rendering and does not continuously consume additional CPU or GPU resources.</li>
-          <li>The application's responsibility is limited to managing <code>entries.json</code> and the associated media files (videos/thumbnails), including importing, updating, and deleting them.</li>
+          <li>macOS 26: one-time file I/O, plus container remuxing for <code>.mp4</code> / <code>.m4v</code> only.</li>
+          <li>macOS 27: one-time encode cost if temporal transcode is required (capped at 30 seconds); compatible <code>.mov</code> files are still copied.</li>
+          <li>After import, playback is handled by the system wallpaper processes. Vidwall Hub does not participate in rendering and does not keep extra CPU or GPU resources in use.</li>
+          <li>The app manages <code>entries.json</code>, <code>Index.plist</code>, and the media files (videos/thumbnails): import, update, and delete.</li>
         </ul>
         <p><strong>macOS 15 is not supported yet</strong></p>
         <pre><code class="code-highlight"><span class="code-line line-number" line="1">/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS
