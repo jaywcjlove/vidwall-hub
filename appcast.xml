@@ -3,6 +3,19 @@
     <channel>
         <title>Vidwall Hub</title>
         <item>
+            <title>2.0.1</title>
+            <pubDate>Fri, 30 Oct 2026 09:47:38 +0800</pubDate>
+            <link>https://github.com/jaywcjlove/vidwall-hub</link>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[<ul>
+<li>1. fix(ui): localize the Vidwall menu description from its app bundle.</li>
+<li>2. fix: set video wallpaper on macOS 27.2.</li>
+</ul>]]></description>
+            <enclosure url="https://github.com/jaywcjlove/vidwall-hub/releases/download/v2.0.1/VidwallHub_v2.0.1.zip" length="2932357" type="application/octet-stream" sparkle:edSignature="YgtKMt7L+9iEkJn5+s9wa+Hkih8V97rqka6fBzFC8xuJ240DTfh9czFCSfzstJjZ/zrvRXNjsddO5KOLAV8ODQ=="/>
+        </item>
+        <item>
             <title>2.0.0</title>
             <pubDate>Tue, 08 Sep 2026 21:44:23 +0800</pubDate>
             <link>https://github.com/jaywcjlove/vidwall-hub</link>
