@@ -10,6 +10,10 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v1.6.3](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.3)
+
+1. 重构：升级 MyAppListKit 至 5.0，并采用 MyAppListKitApps
+
 ## [v1.6.2](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.2)
 
 1. 新功能：程序启动时弹出不支持的 macOS 系统提示，并统一版本校验逻辑
