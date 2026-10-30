@@ -10,6 +10,11 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v2.0.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.0)
+
+1. feat: 兼容 macOS 27，支持设置动态壁纸
+2. fix(ui): 在 macOS 27+ 上正常显示 NSMenuItem 符号图标
+
 ## [v1.6.3](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.3)
 
 1. 重构：升级 MyAppListKit 至 5.0，并采用 MyAppListKitApps

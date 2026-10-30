@@ -10,6 +10,11 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v2.0.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.0)
+
+1. feat: support macOS 27 and dynamic wallpaper setting. 
+2. fix(ui): explicitly show NSMenuItem symbol images on macOS 27+. 
+
 ## [v1.6.3](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v1.6.3)
 
 1. refactor: upgrade MyAppListKit to 5.0 and adopt MyAppListKitApps
