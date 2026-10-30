@@ -10,6 +10,11 @@
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v2.0.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.1)
+
+1. fix(ui): 从应用程序包中本地化 Vidwall 菜单描述。
+2. fix: 修复 macOS 27.2 上设置视频壁纸的问题。
+
 ## [v2.0.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.0)
 
 1. feat: 兼容 macOS 27，支持设置动态壁纸

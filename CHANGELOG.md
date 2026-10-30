@@ -10,6 +10,11 @@ Changelog
     <img alt="Vidwall Hub AppStore" src="https://jaywcjlove.github.io/sb/download/apple-download.svg" height="51">
 </a>
 
+## [v2.0.1](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.1)
+
+1. fix(ui): localize the Vidwall menu description from its app bundle. 
+2. fix: set video wallpaper on macOS 27.2. 
+
 ## [v2.0.0](https://github.com/jaywcjlove/vidwall-hub/releases/tag/v2.0.0)
 
 1. feat: support macOS 27 and dynamic wallpaper setting. 
